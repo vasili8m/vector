@@ -68,9 +68,7 @@ impl GenerateConfig for StatsdSinkConfig {
             default_namespace: None,
             mode: Mode::Udp(StatsdUdpConfig {
                 batch: Default::default(),
-                udp: UdpSinkConfig {
-                    address: default_address().to_string(),
-                },
+                udp: UdpSinkConfig::from_address(default_address().to_string()),
             }),
         })
         .unwrap()
@@ -418,9 +416,7 @@ mod test {
                     timeout_secs: Some(1),
                     ..Default::default()
                 },
-                udp: UdpSinkConfig {
-                    address: addr.to_string(),
-                },
+                udp: UdpSinkConfig::from_address(addr.to_string()),
             }),
         };
 
