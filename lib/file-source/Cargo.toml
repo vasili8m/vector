@@ -12,7 +12,7 @@ crc = "1.8.1"
 futures = { version = "0.3", default-features = false, features = ["executor"] }
 glob = "0.3.0"
 scan_fmt = "0.2.5"
-tracing = "0.1.15"
+tracing = "0.1.25"
 indexmap = {version = "1.5.1", features = ["serde-1"]}
 flate2 = "1.0.19"
 winapi = { version = "0.3", features = ["winioctl"] }
