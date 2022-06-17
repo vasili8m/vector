@@ -212,7 +212,7 @@ postgres-openssl = { version = "0.3.0", optional = true }
 tokio-postgres = { version = "0.5.5", optional = true, features = ["runtime", "with-chrono-0_4"] }
 # Indirect dependency; pinning until
 # https://github.com/timberio/vector/issues/6005 is resolved
-thread_local = "= 1.0.1"
+thread_local = "= 1.1.4"
 dashmap = "3"
 encoding_rs = { version = "0.8", features = ["serde"] }
 
